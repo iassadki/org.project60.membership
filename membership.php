@@ -243,6 +243,15 @@ function membership_civicrm_navigationMenu(&$menu) {
     'operator'   => 'OR',
     'separator'  => 0,
   ));
+  
+ _membership_civix_insert_navigation_menu($menu, 'Administer/CiviMember', array(
+   'label'      => E::ts('Membership Extended Settings'),
+   'name'       => 'p60_membership_extended_settings',
+   'url'        => 'civicrm/admin/setting/membership',
+   'permission' => 'access CiviContribute',
+   'operator'   => 'OR',
+   'separator'  => 0,
+ ));
   _membership_civix_navigationMenu($menu);
 }
 
